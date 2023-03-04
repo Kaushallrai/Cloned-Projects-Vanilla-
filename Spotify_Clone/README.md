@@ -1,11 +1,11 @@
-#Spotify Clone
+# Spotify Clone
 
 This is a Spotify clone created using HTML and CSS. The clone aims to replicate Spotify.
 
-##Technologies Used
+## Technologies Used
 
--HTML
--CSS
+- HTML
+- CSS
 
 ## Getting Started
 
@@ -15,11 +15,11 @@ git clone https://github.com/<your-username>/spotify-clone.git
 cd spotify-clone
 open index.html
 
-##Screenshot
+## Screenshot
 
 ![Screenshot](Screenshots/spotify.png)
 
-##Contributing
+## Contributing
 
 If you'd like to contribute to the Spotify clone, please open an issue or submit a pull request on the repository.
 
