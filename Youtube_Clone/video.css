@@ -1,30 +1,29 @@
 * {
   font-family: Roboto, Arial;
+  margin: 0;
 }
 p {
   margin-top: 0;
   margin-bottom: 0;
 }
-.video-preview {
-  display: inline-block;
-  width: 300px;
-  vertical-align: top;
-  margin-right: 15px;
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
 }
+
 .thumbnail-row {
   margin-bottom: 10px;
 }
 .thumbnail {
-  width: 300px;
+  width: 100%;
 }
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-.channel-picture {
-}
-.video-info {
-}
+
 .profile-picture {
   width: 40px;
   margin-right: 10px;
