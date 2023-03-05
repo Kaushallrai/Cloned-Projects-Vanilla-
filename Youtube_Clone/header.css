@@ -17,9 +17,11 @@
   height: 25px;
   margin-left: 24px;
   margin-right: 24px;
+  cursor: pointer;
 }
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 .middle-section {
   flex: 1;
@@ -58,6 +60,17 @@
   border-color: rgb(190, 188, 188);
   margin-left: -1px;
   margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
 }
 .search-icon {
   height: 25px;
@@ -69,6 +82,7 @@
   border-radius: 50%;
   border: none;
   background-color: rgb(244, 241, 241);
+  cursor: pointer;
 }
 .voice-search-icon {
   height: 24px;
@@ -84,12 +98,15 @@
 }
 .upload-icon {
   height: 25px;
+  cursor: pointer;
 }
 .youtube-apps-icon {
   height: 24px;
+  cursor: pointer;
 }
 .notifications-icon {
   height: 24px;
+  cursor: pointer;
 }
 .notifications-icon-container {
   position: relative;

@@ -4,7 +4,8 @@
 }
 body {
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
 }
 p {
   margin-top: 0;
@@ -18,7 +19,7 @@ p {
 }
 
 .thumbnail-row {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   position: relative;
 }
 .thumbnail {
@@ -41,7 +42,7 @@ p {
 }
 
 .profile-picture {
-  width: 40px;
+  width: 36px;
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -51,7 +52,7 @@ p {
   font-size: 14px;
   line-height: 20px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-stats,
