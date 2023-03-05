@@ -18,6 +18,27 @@ p {
   row-gap: 40px;
 }
 
+@media (min-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 550px) and (max-width: 899px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 100px) and (max-width: 549px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .thumbnail-row {
   margin-bottom: 8px;
   position: relative;
