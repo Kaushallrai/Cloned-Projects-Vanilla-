@@ -2,6 +2,12 @@
   height: 55px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
 }
 .left-section {
   display: flex;
@@ -84,6 +90,20 @@
 }
 .notifications-icon {
   height: 24px;
+}
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(170, 6, 6);
+  color: white;
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-size: 11px;
+  font-weight: 500;
 }
 .current-user-picture {
   height: 32px;
