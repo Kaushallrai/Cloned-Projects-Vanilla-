@@ -11,7 +11,7 @@ This is a Spotify clone created using HTML and CSS. The clone aims to replicate 
 
 To get started with this project, simply clone the repository and open the `index.html` file in your web browser.
 
-git clone https://github.com/Kaushallrai/Cloned-Projects.git
+git clone https://github.com/Kaushallrai/Cloned_Projects.git
 <br>
 cd Cloned_projects/spotify-clone
 <br>
