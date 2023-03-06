@@ -19,7 +19,7 @@ open index.html
 
 ## Screenshot
 
-![Screenshot](Screenshots/YouTube-Clone.png)
+![Screenshot](Screenshots/V2.png)
 
 ## Contributing
 
