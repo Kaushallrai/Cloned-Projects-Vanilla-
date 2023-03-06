@@ -19,7 +19,7 @@ open index.html
 
 ## Screenshot
 
-![Screenshot](Screenshots/V2.png.png)
+![Screenshot](Screenshots/V2.png)
 
 ## Contributing
 
