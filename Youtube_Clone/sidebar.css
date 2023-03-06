@@ -1,6 +1,6 @@
 .sidebar {
   position: fixed;
-  left: 0;
+  left: 5px;
   bottom: 0;
   top: 55px;
   background-color: #ffffff;
@@ -9,12 +9,13 @@
   padding-top: 5px;
 }
 .sidebar-link {
-  height: 75px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  border-radius: 10px;
 }
 .sidebar-link:hover {
   background-color: #f2f2f2;

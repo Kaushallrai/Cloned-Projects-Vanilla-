@@ -16,393 +16,416 @@
     <link rel="stylesheet" href="./sidebar.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="./Icons/hamburger-menu.svg" alt="" />
-        <img class="youtube-logo" src="./Icons/youtube-logo.svg" alt="" />
-      </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button">
-          <img class="search-icon" src="./Icons/search.svg" alt="" />
-          <div class="tooltip">Search</div>
-        </button>
-        <button class="voice-search-button">
-          <img
-            class="voice-search-icon"
-            src="./Icons/voice-search-icon.svg"
-            alt=""
-          />
-          <div class="tooltip">Search with your voice</div>
-        </button>
-      </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="./Icons/upload.svg" alt="" />
-          <div class="tooltip">Create</div>
-        </div>
-        <img class="youtube-apps-icon" src="./Icons/youtube-apps.svg" alt="" />
-        <div class="notifications-icon-container">
-          <img
-            class="notifications-icon"
-            src="./Icons/notifications.svg"
-            alt=""
-          />
-          <div class="tooltip">Notifications</div>
-          <div class="notifications-count">7</div>
-        </div>
-
-        <img class="current-user-picture" src="./Channels/main.jpg" alt="" />
-      </div>
-    </div>
-    <div class="categories">
-      <div class="category" style="background-color: black; color: white">
-        All
-      </div>
-      <div class="category">Mixes</div>
-      <div class="category">Gaming</div>
-      <div class="category">Music</div>
-      <div class="category">Programming</div>
-      <div class="category">JavaScript</div>
-      <div class="category">Python</div>
-      <div class="category">Chess openings</div>
-      <div class="category">Shows</div>
-      <div class="category">Contemporary R&B</div>
-      <div class="category">Electric guitar</div>
-      <div class="category">Playlists</div>
-      <div class="category">3D modeling</div>
-    </div>
-    <div class="sidebar">
-      <div class="sidebar-link">
-        <img src="./Icons/home.svg" alt="" />
-        <div>Home</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./Icons/explore.svg" alt="" />
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./Icons/subscriptions.svg" alt="" />
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./Icons/originals.svg" alt="" />
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./Icons/youtube-music.svg" alt="" />
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./Icons/library.svg" alt="" />
-        <div>Library</div>
-      </div>
-    </div>
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/harvard.webp" />
-          <div class="video-time">6:45:09</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/freeCodeCamp.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Harvard CS50 — Full Computer Science University Course
-            </p>
-            <p class="video-author">freeCodeCamp.org</p>
-            <p class="video-stats">3.4M views &#183; 6 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/Cafe.webp" />
-          <div class="video-time">15:06</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/BARISTAJOY.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              cafe vlog \ opening routine at my cafe JOY COFFEE BAR in Korea
-            </p>
-            <p class="video-author">BARISTAJOY바리스타조이</p>
-            <p class="video-stats">57K views &#183; 1 year ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/die for you.webp" />
-          <div class="video-time">4:02</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/Ariana Grande.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              The Weeknd & Ariana Grande - Die For You (Official Audio)
-            </p>
-            <p class="video-author">Ariana Grande</p>
-            <p class="video-stats">2M views &#183; 7 days ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/The Map of Engineering.webp" />
-          <div class="video-time">8:15</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
+    <div class="smooth-scroll-wrapper">
+      <div class="header">
+        <div class="left-section">
+          <div class="hamburger-menu-container">
             <img
-              class="profile-picture"
-              src="./Channels/Domain of Science.jpg"
+              class="hamburger-menu"
+              src="./Icons/hamburger-menu.svg"
+              alt=""
             />
           </div>
-          <div class="video-info">
-            <p class="video-title">The Map of Engineering</p>
-            <p class="video-author">Domain of Science</p>
-            <p class="video-stats">1.1M views &#183; 5 months ago</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/TheFatRat.webp" />
-          <div class="video-time">3:45</div>
+          <img class="youtube-logo" src="./Icons/youtube-logo.svg" alt="" />
         </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/TheFatRat.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">TheFatRat - Rise Up</p>
-            <p class="video-author">TheFatRat</p>
-            <p class="video-stats">36M views &#183; 3 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/js fighting game.webp" />
-          <div class="video-time">4:28:07</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/Chris Courses.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              JavaScript Fighting Game Tutorial with HTML Canvas
-            </p>
-            <p class="video-author">Chris Courses</p>
-            <p class="video-stats">1.6M views &#183; 11 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/keshi.webp" />
-          <div class="video-time">3:50</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/keshi.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">keshi - LIMBO (Visualizer)</p>
-            <p class="video-author">keshi</p>
-            <p class="video-stats">4.1M views &#183; 11 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/chess.webp" />
-          <div class="video-time">17:18</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
+        <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="Search" />
+          <button class="search-button">
+            <img class="search-icon" src="./Icons/search.svg" alt="" />
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="voice-search-button">
             <img
-              class="profile-picture"
-              src="./Channels/Remote Chess Academy.jpg"
+              class="voice-search-icon"
+              src="./Icons/voice-search-icon.svg"
+              alt=""
             />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Win Easily [by Sacrificing on f7] In 10 Popular Chess Openings
-            </p>
-            <p class="video-author">Remote Chess Academy</p>
-            <p class="video-stats">42K views &#183; 1 day ago</p>
-          </div>
+            <div class="tooltip">Search with your voice</div>
+          </button>
         </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/2 mins.webp" />
-          <div class="video-time">12:10</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
+        <div class="right-section">
+          <div class="upload-icon-container">
+            <img class="upload-icon" src="./Icons/upload.svg" alt="" />
+            <div class="tooltip">Create</div>
+          </div>
+          <div class="youtube-app-icon-container">
             <img
-              class="profile-picture"
-              src="./Channels/Cajun Koi Academy.jpg"
+              class="youtube-apps-icon"
+              src="./Icons/youtube-apps.svg"
+              alt=""
             />
+            <div class="tooltip">Apps</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">How to change your life in 2 minutes</p>
-            <p class="video-author">Cajun Koi Academy</p>
-            <p class="video-stats">53k views &#183; 2 days ago</p>
+          <div class="notifications-icon-container">
+            <img
+              class="notifications-icon"
+              src="./Icons/notifications.svg"
+              alt=""
+            />
+            <div class="tooltip">Notifications</div>
+            <div class="notifications-count">7</div>
           </div>
+
+          <img class="current-user-picture" src="./Channels/main.jpg" alt="" />
         </div>
       </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/js101.webp" />
-          <div class="video-time">7:08</div>
+      <div class="categories">
+        <div class="category" style="background-color: black; color: white">
+          All
         </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/fireship.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">100+ JavaScript Concepts you Need to Know</p>
-            <p class="video-author">Fireship</p>
-            <p class="video-stats">816K views &#183; 3 months ago</p>
-          </div>
+        <div class="category">Mixes</div>
+        <div class="category">Gaming</div>
+        <div class="category">Music</div>
+        <div class="category">Programming</div>
+        <div class="category">JavaScript</div>
+        <div class="category">Python</div>
+        <div class="category">Chess openings</div>
+        <div class="category">Shows</div>
+        <div class="category">Contemporary R&B</div>
+        <div class="category">Electric guitar</div>
+        <div class="category">Playlists</div>
+        <div class="category">3D modeling</div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-link">
+          <img src="./Icons/home.svg" alt="" />
+          <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./Icons/explore.svg" alt="" />
+          <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./Icons/subscriptions.svg" alt="" />
+          <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./Icons/originals.svg" alt="" />
+          <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./Icons/youtube-music.svg" alt="" />
+          <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="./Icons/library.svg" alt="" />
+          <div>Library</div>
         </div>
       </div>
+      <div class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/harvard.webp" />
+            <div class="video-time">6:45:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/freeCodeCamp.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Harvard CS50 — Full Computer Science University Course
+              </p>
+              <p class="video-author">freeCodeCamp.org</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/people.webp" />
-          <div class="video-time">4:10</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/LIBIANCA.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Cafe.webp" />
+            <div class="video-time">15:06</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">Libianca - People (Lyrics Video)</p>
-            <p class="video-author">LIBIANCA</p>
-            <p class="video-stats">5.9M views &#183; 9 days ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/BARISTAJOY.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                cafe vlog \ opening routine at my cafe JOY COFFEE BAR in Korea
+              </p>
+              <p class="video-author">BARISTAJOY바리스타조이</p>
+              <p class="video-stats">57K views &#183; 1 year ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/guitar.webp" />
-          <div class="video-time">2:23</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/ichika nito.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/die for you.webp" />
+            <div class="video-time">4:02</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              1 SIMPLE GUITAR TRICK to Create Cool Sound
-            </p>
-            <p class="video-author">Ichika Nito</p>
-            <p class="video-stats">1.7M views &#183; 3 years ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/Ariana Grande.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The Weeknd & Ariana Grande - Die For You (Official Audio)
+              </p>
+              <p class="video-author">Ariana Grande</p>
+              <p class="video-stats">2M views &#183; 7 days ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="thumbnails/day in a life of a software enginner.webp"
-          />
-          <div class="video-time">14:16</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/marko.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/The Map of Engineering.webp"
+            />
+            <div class="video-time">8:15</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              Day in the Life of a Software Engineer (Ep. 2) - First Person View
-            </p>
-            <p class="video-author">Marko</p>
-            <p class="video-stats">820K views &#183; 9 months ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="./Channels/Domain of Science.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">The Map of Engineering</p>
+              <p class="video-author">Domain of Science</p>
+              <p class="video-stats">1.1M views &#183; 5 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/KTM 1290.webp" />
-          <div class="video-time">11:09</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/BuGGy.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/TheFatRat.webp" />
+            <div class="video-time">3:45</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              Kyoto City Ride2 / KTM 1290 SUPER DUKE R [PURE SOUND] + 4K
-            </p>
-            <p class="video-author">BuGGy POV</p>
-            <p class="video-stats">1.7M views &#183; 1 year ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/TheFatRat.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">TheFatRat - Rise Up</p>
+              <p class="video-author">TheFatRat</p>
+              <p class="video-stats">36M views &#183; 3 years ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/dota.webp" />
-          <div class="video-time">1:35</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/kaushal.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/js fighting game.webp" />
+            <div class="video-time">4:28:07</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              How to remove LAG and increase FPS in DOTA2 latest update (August
-              2021) pt.2
-            </p>
-            <p class="video-author">Kaushal Rai</p>
-            <p class="video-stats">19k views &#183; 1 year ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/Chris Courses.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                JavaScript Fighting Game Tutorial with HTML Canvas
+              </p>
+              <p class="video-author">Chris Courses</p>
+              <p class="video-stats">1.6M views &#183; 11 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/lofi.webp" />
-          <div class="video-time">1:38:05</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="./Channels/HITO.jpg" />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/keshi.webp" />
+            <div class="video-time">3:50</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              Night lofi play + lofi music | chill beats to relax/study to
-            </p>
-            <p class="video-author">HITO</p>
-            <p class="video-stats">202k views &#183; 1 month ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/keshi.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">keshi - LIMBO (Visualizer)</p>
+              <p class="video-author">keshi</p>
+              <p class="video-stats">4.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/chess.webp" />
+            <div class="video-time">17:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="./Channels/Remote Chess Academy.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Win Easily [by Sacrificing on f7] In 10 Popular Chess Openings
+              </p>
+              <p class="video-author">Remote Chess Academy</p>
+              <p class="video-stats">42K views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/2 mins.webp" />
+            <div class="video-time">12:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="./Channels/Cajun Koi Academy.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">How to change your life in 2 minutes</p>
+              <p class="video-author">Cajun Koi Academy</p>
+              <p class="video-stats">53k views &#183; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/js101.webp" />
+            <div class="video-time">7:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/fireship.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                100+ JavaScript Concepts you Need to Know
+              </p>
+              <p class="video-author">Fireship</p>
+              <p class="video-stats">816K views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/people.webp" />
+            <div class="video-time">4:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/LIBIANCA.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Libianca - People (Lyrics Video)</p>
+              <p class="video-author">LIBIANCA</p>
+              <p class="video-stats">5.9M views &#183; 9 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/guitar.webp" />
+            <div class="video-time">2:23</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/ichika nito.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                1 SIMPLE GUITAR TRICK to Create Cool Sound
+              </p>
+              <p class="video-author">Ichika Nito</p>
+              <p class="video-stats">1.7M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/day in a life of a software enginner.webp"
+            />
+            <div class="video-time">14:16</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/marko.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Day in the Life of a Software Engineer (Ep. 2) - First Person
+                View
+              </p>
+              <p class="video-author">Marko</p>
+              <p class="video-stats">820K views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/KTM 1290.webp" />
+            <div class="video-time">11:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/BuGGy.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Kyoto City Ride2 / KTM 1290 SUPER DUKE R [PURE SOUND] + 4K
+              </p>
+              <p class="video-author">BuGGy POV</p>
+              <p class="video-stats">1.7M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/dota.webp" />
+            <div class="video-time">1:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/kaushal.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How to remove LAG and increase FPS in DOTA2 latest update
+                (August 2021) pt.2
+              </p>
+              <p class="video-author">Kaushal Rai</p>
+              <p class="video-stats">19k views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/lofi.webp" />
+            <div class="video-time">1:38:05</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="./Channels/HITO.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Night lofi play + lofi music | chill beats to relax/study to
+              </p>
+              <p class="video-author">HITO</p>
+              <p class="video-stats">202k views &#183; 1 month ago</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
