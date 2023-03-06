@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Montserrat, Arial;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding-top: 65px;
+  height: 120vh;
+  padding-right: 25px;
+  padding-left: 240px;
+}
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background-color: #6c6c6c;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4f4f4f;
+  height: initial;
+  opacity: 0.9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+  z-index: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.playlist-content {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.playlist-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.playlist-content a:hover {
+  text-decoration: underline;
+}
+.playlist-content p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.playlist-content p:hover {
+  text-decoration: underline;
+}
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* @media (min-width: 1300px) {
+  .list-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 900px) and (max-width: 1299px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 550px) and (max-width: 899px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 100px) and (max-width: 549px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.playlist-preview {
+  display: flex;
+  flex-direction: column;
+  min-width: 195px;
+  background-color: #171717;
+  border-radius: 6px;
+  padding: 15px;
+  transition: all ease 0.4s;
+}
+.playlist-preview:hover {
+  transform: scale(1.05);
+  background-color: #252525;
+}
+.playlist-preview .play {
+  position: relative;
+}
+.playlist-preview .play .fa {
+  position: absolute;
+  right: 8px;
+  top: -55px;
+  padding: 18px;
+  color: black;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+  font-size: 15px;
+}
+.playlist-preview:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.playlist-preview img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.playlist-preview h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.playlist-preview p {
+  font-size: 13px;
+  color: #989898;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 22px;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 40px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

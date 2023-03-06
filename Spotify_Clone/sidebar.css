@@ -1,0 +1,107 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  padding: 30px 25px;
+  z-index: 1;
+}
+.sidebar .logo img {
+  width: 130px;
+  margin-bottom: 30px;
+}
+.sidebar .navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .navigation .upper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.sidebar .navigation .upper i {
+  font-size: 24px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  color: #b3b3b3;
+}
+.sidebar .navigation .upper i:hover,
+.sidebar .navigation .upper i:active,
+.sidebar .navigation .upper i:focus {
+  color: #ffffff;
+}
+.sidebar .navigation .upper a:hover,
+.sidebar .navigation .upper a:active,
+.sidebar .navigation .upper a:focus {
+  color: #ffffff;
+}
+.sidebar .navigation .upper a {
+  display: flex;
+  align-items: last baseline;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sidebar .navigation .lower {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.sidebar .navigation .lower i {
+  font-size: 24px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  color: #b3b3b3;
+}
+.sidebar .navigation .lower a {
+  display: flex;
+  align-items: last baseline;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sidebar .cookies p {
+  color: #b3b3b3;
+  font-size: 11px;
+  margin-top: 270px;
+  cursor: pointer;
+}
+.sidebar .cookies p:hover,
+.sidebar .cookies p:active,
+.sidebar .cookies p:focus {
+  color: #b6b6b6;
+  text-decoration: underline;
+}
+
+.sidebar .languages {
+  margin-top: 40px;
+  display: flex;
+  border: #b3b3b3 solid 0.5px;
+  width: 90px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 9px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.sidebar .languages i {
+  color: white;
+  font-size: 15px;
+}
+.sidebar .languages span {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+.sidebar .languages:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
