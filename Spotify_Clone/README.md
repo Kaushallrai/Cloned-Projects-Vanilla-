@@ -19,7 +19,7 @@ open index.html
 
 ## Screenshot
 
-![Screenshot](Screenshots/spotify.png)
+![Screenshot](Screenshots/V2.png.png)
 
 ## Contributing
 
