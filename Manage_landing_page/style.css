@@ -115,6 +115,18 @@ svg {
 }
 
 /* Utility classes */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .text-primary-400 {
   color: var(--clr-primary-400);
 }
@@ -225,11 +237,76 @@ body {
   color: var(--clr-accent-400);
 }
 .button[data-type="inverted"]:hover,
-button[data-type="inverted"]:focus-visible {
+.button[data-type="inverted"]:focus-visible {
   background-color: var(--clr-neutral-100);
   color: var(--clr-accent-300);
 }
 .button:hover,
-button:focus-visible {
+.button:focus-visible {
   background-color: var(--clr-accent-300);
+}
+/* navigation */
+.primary-header {
+  padding-top: var(--size-700);
+  display: flex;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-nav-toggle {
+  display: none;
+}
+.nav-list {
+  font-size: var(--fs-nav);
+}
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+
+    position: fixed;
+    padding: var(--size-700);
+    inset: 7rem var(--size-400) auto;
+    background: var(--clr-neutral-100);
+    border-radius: var(--size-100);
+    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
+  }
+  .primary-header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8));
+  }
+  .nav-list {
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+    font-weight: var(--fw-bold);
+  }
+  .nav-list a {
+    color: var(--clr-primary-400);
+    text-decoration: none;
+  }
+  .nav-list a:hover,
+  .nav-list a:focus {
+    color: var(--clr-accent-400);
+  }
+  .primary-navigation[data-visible] {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: var(--size-600);
+    right: var(--size-400);
+    z-index: 100;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
 }
